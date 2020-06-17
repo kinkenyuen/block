@@ -24,7 +24,7 @@ typedef void(^blk_t)(void);
     };
     NSLog(@"block : %@",block);
     
-    //在栈上生成的block为__NSStackBlock__
+    //在栈上生成的block并且捕获自动变量,为__NSStackBlock__
     NSLog(@"%@",^{NSLog(@"val : %d",val);});
     
     //情况2 对__NSStackBlock__进行copy操作后，成为__NSMallocBlock__
