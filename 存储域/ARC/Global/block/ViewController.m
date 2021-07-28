@@ -34,13 +34,13 @@ static int static_global_val = 2;
 //    };
     
     //静态局部变量
-    static int static_val = 2;
-    void(^block)(void) = ^(void) {
-        NSLog(@"block invoked");
-        NSLog(@"static_val : %d", static_val);
-    };
+//    static int static_val = 2;
+//    void(^block)(void) = ^(void) {
+//        NSLog(@"block invoked");
+//        NSLog(@"static_val : %d", static_val);
+//    };
     
-    block();
+    NSLog(@"%@",block);
 }
 
 
